@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0%;
+    background-color: #f5f7fa;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section {
+    padding: 48px 20px;
+}
+h2 {
+    margin: 0 0 24px;
+    color: #002060;
+    text-align: center;
+}
+.hero {
+    padding: 72px 20px;
+    background-color: #002060;
+    color: #fff;
+    text-align: center;
+}
+.hero h1 {
+    margin: 0 0 12px;
+    font-size: 48px;
+}
+hero p {
+    margin: 0 0 28px;
+    font-size: 20px;
+}
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f2c14e;
+    color: #002060;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #d4a017;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.card {
+    flex: 1 1 260px;
+}
+.card {
+    padding: 24px;
+    background-color: #fff;
+    border-top: 6px solid #002060;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-8px);
+}
+.card h3 {
+    margin: 0 0 8px;
+    color: #002060;
+}
+.seats {
+    font-weight: bold;
+    color: #002060; 
+}
+.form-card {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 32px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom:16px ;
+}
+label,
+legend {
+    font-weight: bold;
+}
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 0 0 16px;
+    padding: 0;
+    border: none;
+}
+legend {
+    margin-bottom: 6px;
+    padding: 0;
+}
+.option {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+    }
+input:not([type="radio"]),
+select,
+textarea {
+    padding: 10px 12px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 16px;
+}
+.form-card .btn {
+    width: 100%;
+}
+.footer {
+    padding: 24px 20px;
+    background-color: #002060;
+    color: #fff;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .hero {
+        padding: 48px 20px;
+    }
+    .hero h1 {
+        font-size: 34px;
+    }
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid #f2c14e;
+    outline-offset: 2px;
+}

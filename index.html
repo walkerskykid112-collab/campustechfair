@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Campus Tech Fair</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <header class="hero">
+        <h1>Campus Tech Fair</h1>
+        <p>Workshops, live demos and networking in one day.</p>
+        <a class="btn" href="#signup">Reserve my seat</a>
+    </header>
+    <main>
+        <section id="workshops">
+            <h2>Choose a workshop</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Data Analytics</h3>
+                    <p>Explore data and build useful insights.</p>
+                    <span class="seats">15 seats</span>
+                </article>
+                <article class="card">
+                    <h3>Web Design</h3>
+                    <p>Build and publish your first responsive page.</p>
+                    <span class="seats">30 seats</span>
+                </article>
+                <article class="card">
+                    <h3>Mobile Apps</h3>
+                    <p>Create a simple app and run it on your phone.</p>
+                    <span class="seats">25 seats</span>
+                </article>
+                <article class="card">
+                    <h3>Cyber Security</h3>
+                    <p>Learn how to spot and stop common attacks.</p>
+                    <span class="seats">20 seats</span>
+                </article>
+            </div>
+        </section>
+        <section id="event-details">
+            <h2>Event details</h2>
+            <div class="event-details">
+                <p><strong>Date:</strong> To be announced</p>
+                <p><strong>Time:</strong> To be announced</p>
+                <p><strong>Venue:</strong> To be announced</p>
+            </div>
+        </section>
+        <section id="signup">
+            <h2>Reserve your seat</h2>
+            <form class="form-card">
+                <div class="field">
+                    <label for="fullname">Full name</label>
+                    <input type="text" id="fullname" name="fullname"required>
+                </div>
+                <div class="field">
+                  <label for="email">Student email</label>
+                  <input type="email" id="email" name="email"required>  
+                </div>
+                <div class="field">
+                    <label for="phone">Phone number</label>
+                  <input type="tel" id="phone" name="phone"
+                  placeholder="0240000000" pattern="0[0-9]{2} ?[0-9]{3} ?[0-9]{4}" title="Enter 10 digits starting with 0" required>  
+                </div>
+                <div class="field">
+                    <lable for="workshop">Workshop</lable>
+                    <select id="workshop" name="workshop" required >
+                        <option value="">Choose a workshop</option>
+                        <option value="data">Data Analytics</option>
+                        <option value="web">Web Design</option>
+                        <option value="mobile">Mobile App</option>
+                        <option value="cyber">Cyber Security</option>
+                    </select>
+                    <fieldset>
+                        <legend>Level</legend>
+                        <label class="option"><input type="radio" name="level"
+                            value="100" required> 100</label>
+                        <label class="option"><input type="radio" name="level"
+                            value="200" required> 200</label>
+                        <label class="option"><input type="radio" name="level"
+                            value="300" required> 300</label>
+                        <label class="option"><input type="radio" name="level"
+                            value="400" required> 400</label>  
+                    </fieldset>
+                    <div class="field">
+                        <label for="reason">Why do you want to attend</label>
+                        <textarea id="reason" name="reason" rows="3"></textarea>
+                    </div>
+                    <button class="btn" type="submit">Reserve my seat</button>
+                </div>   
+              </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Organised by the Computing Students' Club</p>
+    </footer>
+</html>
